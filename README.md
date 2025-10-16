@@ -11,9 +11,9 @@ Applying such transformations on the vertices (edges, faces) in the model space 
 
 ### 2. From World to View Space
 
-In this step, a camera, defined also by its transformation matrix relative to the world space, should observe the object by modeling perspective projcetion. 
+In this step, a camera, defined also by its transformation matrix relative to the world space, should observe the object by modelling perspective projection. 
 
-However, to make thing as simple as possible in the next step, everything in the world space should be transformed, such that the camera is located at the origin, with its viewin direction aligning with the positive forward axis. Therefore, every object needs to be transformed, such that it keeps its relative position to the camera.
+However, to make thing as simple as possible in the next step, everything in the world space should be transformed, such that the camera is located at the origin, with its viewing direction aligning with the positive forward axis. Therefore, every object needs to be transformed, such that it keeps its relative position to the camera.
 
 This is done by applying the **view matrix** on the vertices in the world space:
 
@@ -27,7 +27,7 @@ f_1 & f_2 & f_3 & -p_3 \\
 \end{pmatrix}
 $$
 
-where $mathbf{r}, mathbf{u}, mathbf{f}$ describe the camera axes and $mathbf{p}$ the camera position in the world space.
+where $\mathbf{r}, \mathbf{u}, \mathbf{f}$ describe the camera axes and $\mathbf{p}$ the camera position in the world space.
 
 ### 3. From View to Projection Space
 
