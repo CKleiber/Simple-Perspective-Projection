@@ -47,4 +47,6 @@ $$
 
 with $\text{FOV}_{h/v}$ describing the horizontal and vertical field of view angles and $f$ and $n$ denoting the near and far clipping planes, dictating what distance range to camera will be rendered. 
 
+This matrix essentially scales the objects relative to their distances to the camera. 
+
 After this transformation, the vectors should be divided by the last component in the homogeneous coordinates. Then, the first two dimensiones denote the 2D projection, while the third dimension contains depth information, relevant for rendering order.
